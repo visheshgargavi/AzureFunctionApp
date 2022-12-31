@@ -93,3 +93,4 @@ logging.info(os.environ['variable_name']
 5. Time trigger( ["Architecture"](https://github.com/visheshgargavi/AzureFunctionApp/issues/3#issue-1515117073) )
 6. Trigger Queue -> Output Queue ["Architecture] (https://github.com/visheshgargavi/AzureFunctionApp/issues/4#issue-1515138733)
 7. Trigger Queue -> Input blob -> Output Blob ["Architecture] ( https://github.com/visheshgargavi/AzureFunctionApp/issues/5#issue-1515147249 ) 
+8. Bus Service Queue Trigger -> Bus service queue output ["Architecture"] ( https://github.com/visheshgargavi/AzureFunctionApp/issues/6#issue-1515199178)
