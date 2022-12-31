@@ -1,8 +1,10 @@
 # AzureFunctionApp
 
-## what is azure app function?
+## What is azure app function?
 ```hcl
-Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.
+Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. 
+Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date 
+resources needed to keep your applications running.
 
 1.	Serverless function (on demand like the compute will only function if the function is invoked & all the compute, storage and runtime will be maintained by azure we don’t have to set any parameter or anything).
 2.	Machine resources on demand & taken care by azure.
@@ -12,31 +14,46 @@ Azure Functions is a serverless solution that allows you to write less code, mai
 6.	You only pay for function invocation and only small amount for storage.
 7.	The time spent in between the start of a request and the end of the request.
 
-Disadvantage of serverless.
+Limitation of serverless.
 1.	Only limited to compute services
 2.	Monitoring & debugging
 3.	Vendor lock-in & security
+
+Disadvantage of serverless
+1. Loss control over hardware & runtime
+2. Use proprietary tools of a particular cloud provider.
 
 Performance(Cold start) : Setup time required  to set and application env up & running when invoked for the first time in the defined period.
 Factors are:
 a.	Code size (directly proportional to line of code)
 b.	Language used
 
+
 ```
 
-## what is binding?
+## What is binding?
 ```hcl
 Binding to a function is a way of declaratively connecting another resource to the function; bindings may be connected as input bindings, output bindings, or both. Data from bindings is provided to the function as parameters. You can mix and match different bindings to suit your needs.
 ```
 
-## what is trigger?
+## What is trigger?
 ```hcl
 Triggers cause a function to run. A trigger defines how a function is invoked and a function must have exactly one trigger. Triggers have associated data, which is often provided as the payload of the function.
 ```
 
-## what is input & output?
+## What is input & output?
 ```hcl
 An input binding is the data that your function receives. An output binding is the data that your function sends. Unlike a trigger, a function can have multiple input and output bindings.
+```
+
+## To create azure function using command line
+
+```hcl
+func init
+func new
+func start
+
+To start the service and collect log on local editor(Func + f5)
 ```
 
 ## configuration
