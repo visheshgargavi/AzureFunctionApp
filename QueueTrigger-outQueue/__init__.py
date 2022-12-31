@@ -21,5 +21,5 @@ def main(msg: func.QueueMessage,copymsg: func.Out[str]) -> None:
         'dequeue_count': msg.dequeue_count
     })
     logging.info(result)
-    copymsg.set(str(msg.get_body.decode('utf-8')))
+    copymsg.set(str(msg.get_body().decode('utf-8')))
     logging.info("Success!!")
