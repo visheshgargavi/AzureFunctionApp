@@ -6,7 +6,8 @@ Azure Functions is a serverless solution that allows you to write less code, mai
 Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date 
 resources needed to keep your applications running.
 
-1.	Serverless function (on demand like the compute will only function if the function is invoked & all the compute, storage and runtime will be maintained by azure we don’t have to set any parameter or anything).
+1.	Serverless function (on demand like the compute will only function if the function is invoked & all the compute, storage 
+and runtime will be maintained by azure we don’t have to set any parameter or anything).
 2.	Machine resources on demand & taken care by azure.
 3.	Zero administration, increased velocity, pay as per go, auto scaling
 4.	Less code
@@ -33,17 +34,21 @@ b.	Language used
 
 ## What is binding?
 ```hcl
-Binding to a function is a way of declaratively connecting another resource to the function; bindings may be connected as input bindings, output bindings, or both. Data from bindings is provided to the function as parameters. You can mix and match different bindings to suit your needs.
+Binding to a function is a way of declaratively connecting another resource to the function; 
+bindings may be connected as input bindings, output bindings, or both. 
+Data from bindings is provided to the function as parameters. You can mix and match different bindings to suit your needs.
 ```
 
 ## What is trigger?
 ```hcl
-Triggers cause a function to run. A trigger defines how a function is invoked and a function must have exactly one trigger. Triggers have associated data, which is often provided as the payload of the function.
+Triggers cause a function to run. A trigger defines how a function is invoked and a function must have exactly one trigger. 
+Triggers have associated data, which is often provided as the payload of the function.
 ```
 
 ## What is input & output?
 ```hcl
-An input binding is the data that your function receives. An output binding is the data that your function sends. Unlike a trigger, a function can have multiple input and output bindings.
+An input binding is the data that your function receives. An output binding is the data that your function sends. 
+Unlike a trigger, a function can have multiple input and output bindings.
 ```
 
 ## To create azure function using command line
