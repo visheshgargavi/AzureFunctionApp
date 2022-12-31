@@ -3,6 +3,25 @@
 ## what is azure app function?
 ```hcl
 Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.
+
+1.	Serverless function (on demand like the compute will only function if the function is invoked & all the compute, storage and runtime will be maintained by azure we don’t have to set any parameter or anything).
+2.	Machine resources on demand & taken care by azure.
+3.	Zero administration, increased velocity, pay as per go, auto scaling
+4.	Less code
+5.	Event trigger
+6.	You only pay for function invocation and only small amount for storage.
+7.	The time spent in between the start of a request and the end of the request.
+
+Disadvantage of serverless.
+1.	Only limited to compute services
+2.	Monitoring & debugging
+3.	Vendor lock-in & security
+
+Performance(Cold start) : Setup time required  to set and application env up & running when invoked for the first time in the defined period.
+Factors are:
+a.	Code size (directly proportional to line of code)
+b.	Language used
+
 ```
 
 ## what is binding?
