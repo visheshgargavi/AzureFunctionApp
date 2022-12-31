@@ -10,3 +10,11 @@
 import os
 logging.info(os.environ['variable_name']
 ```
+
+## use case
+```hcl
+1. Trigger(http) -> output(http)
+2. Trigger(blob) -> output(blob)
+3. Trigger(http) -> input(storage table) -> output(http get request)
+4. Trigger(http) -> output(storage table insert data fetched using get method) -> output(http)
+```
