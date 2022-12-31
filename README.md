@@ -24,7 +24,8 @@ Disadvantage of serverless
 1. Loss control over hardware & runtime
 2. Use proprietary tools of a particular cloud provider.
 
-Performance(Cold start) : Setup time required  to set and application env up & running when invoked for the first time in the defined period.
+Performance(Cold start) : Setup time required  to set and application env up & running when invoked for the first time 
+in the defined period.
 Factors are:
 a.	Code size (directly proportional to line of code)
 b.	Language used
@@ -60,6 +61,17 @@ func start
 
 To start the service and collect log on local editor(Func + f5)
 ```
+
+## __init__.py
+- It is the file that store the function configuration what needed to be done
+
+## function.json
+- File consist of all the binding related code, name, input & output direction etc
+
+## hosts.json
+- File consists of version, retry time, security header/custom header etc.
+- File can be found in app files
+https://github.com/visheshgargavi/AzureFunctionApp/issues/2#issue-1515115688
 
 ## configuration
 - you can add the string connector in the configuration section to connect with storage account, queue namespaces etc.
