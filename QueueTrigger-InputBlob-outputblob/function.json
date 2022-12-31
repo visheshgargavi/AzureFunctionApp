@@ -1,0 +1,28 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "queuemsg",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "js-queue-items",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "inputblob",
+      "type": "blob",
+      "direction": "in",
+      "path": "incontainer/{queueTrigger}",
+      "connection": "AzureWebJobsStorage",
+      "dataType": "binary"
+    },
+    {
+      "name": "outputblob",
+      "direction": "out",
+      "type": "blob",
+      "dataType": "binary",
+      "path": "outcontainernew/new-{queueTrigger}",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}
