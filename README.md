@@ -91,3 +91,4 @@ logging.info(os.environ['variable_name']
 3. Trigger(http) -> input(storage table) -> output(http get request)
 4. Trigger(http) -> output(storage table insert data fetched using get method) -> output(http)
 5. Time trigger( ["Architecture"](https://github.com/visheshgargavi/AzureFunctionApp/issues/3#issue-1515117073) )
+6. Trigger Queue -> Output Queue ["Architecture] (https://github.com/visheshgargavi/AzureFunctionApp/issues/4#issue-1515138733)
