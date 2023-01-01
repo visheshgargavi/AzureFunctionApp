@@ -77,6 +77,8 @@ https://github.com/visheshgargavi/AzureFunctionApp/issues/2#issue-1515115688
 - you can add the string connector in the configuration section to connect with storage account, queue namespaces etc.
 - you can add env variable in configuration section and then u can pass or use in the __init__.py file
 - for testing it locally you can define it in the local.settings.json and import using the same beow code
+- for defining connection string locally update local.settings.json
+- for defining it on the azure app function setting->configuration->application setting
 
 (["Configuration Image"](https://github.com/visheshgargavi/AzureFunctionApp/issues/1#issue-1515111262))
 ```hcl
@@ -93,3 +95,5 @@ logging.info(os.environ['variable_name']
 5. Time trigger( ["Architecture"](https://github.com/visheshgargavi/AzureFunctionApp/issues/3#issue-1515117073) )
 6. Trigger Queue -> Output Queue ["Architecture] (https://github.com/visheshgargavi/AzureFunctionApp/issues/4#issue-1515138733)
 7. Trigger Queue -> Input blob -> Output Blob ["Architecture] ( https://github.com/visheshgargavi/AzureFunctionApp/issues/5#issue-1515147249 ) 
+8. Bus Service Queue Trigger -> Bus service queue output ["Architecture"] ( https://github.com/visheshgargavi/AzureFunctionApp/issues/6#issue-1515199178)
+9. Http Trigger -> Output(Service Bus Topic Trigger) -> Output(Http Post) ["Architecture] ( https://github.com/visheshgargavi/AzureFunctionApp/issues/7#issue-1515464124 )
