@@ -1,0 +1,31 @@
+ {
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ],
+      "route": "user/{partitionId}/{id}"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "documents",
+      "direction": "in",
+      "connectionStringSetting": "AzureWebJobsCosmosDB",
+      "databaseName": "Person",
+      "collectionName": "User",
+      "Id": "{id}",
+      "PartitionKey": "{partitionId}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}
