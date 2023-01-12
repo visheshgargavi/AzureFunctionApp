@@ -1,0 +1,28 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+          "get",
+          "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "name": "todoItems",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "select * from [dbo].[Person]",
+      "commandType": "Text",
+      "connectionStringSetting": "AzureWebSql"
+    }
+  ]
+}
